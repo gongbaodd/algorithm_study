@@ -8,7 +8,7 @@ result(head => {
         }
 
         let last = reverse(node.next);
-        node.next.next = node;
+        node.next.next = node;// reverse the next pointer back to self
         node.next = null;
 
         return last;
