@@ -1,5 +1,3 @@
-const CHAIN_LEN = 8;
-
 export class LNode {
     data: number = 0;
     next: LNode | null = null;
@@ -10,26 +8,6 @@ export class LNode {
     }
 }
 
-export function init(): LNode {
-    let i = 0;
-
-    let head = new LNode(i);
-    let tmp: LNode;
-    let cur = head;
-
-    while(1) {
-        i++;
-        tmp = new LNode(i);
-        cur.next = tmp;
-        cur = tmp;
-
-        if (i >= CHAIN_LEN-1) {
-            break;
-        }   
-    }
-
-    return head;
-}
 
 export function show(head: LNode) {
     if (head.next == null) {
@@ -44,12 +22,12 @@ export function show(head: LNode) {
     process.stdout.write("\n");
 }
 
-export function result(reverse_fn: (node: LNode) => void) {
+export function result(init: () => LNode, fn: (node: LNode) => void) {
     const head = init();
-    console.log("Before reverse:");
+    console.log("Before:");
     show(head);
     
-    reverse_fn(head);
-    console.log("After reverse:");
+    fn(head);
+    console.log("After:");
     show(head);
 }
