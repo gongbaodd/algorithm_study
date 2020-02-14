@@ -1,22 +1,22 @@
-import {LNode, result} from './lib';
+import { LNode, result } from "./lib";
 
-result(head => {
-    if (head.next == null) {
-        return;
+result((head) => {
+  if (head.next == null) {
+    return;
+  }
+
+  const current = head.next;
+  let { next } = current;
+
+  while (1) {
+    if (next == null) {
+      break;
     }
 
-    let current = head.next;
-    let next = current.next;
-
-    while(1) {
-        if (next == null) {
-            break;
-        }
-
-        let first = head.next;
-        current.next = next.next;
-        head.next = next;
-        next.next = first;
-        next = current.next;
-    }
+    const first = head.next;
+    current.next = next.next;
+    head.next = next;
+    next.next = first;
+    next = current.next;
+  }
 });
