@@ -1,17 +1,18 @@
-import {LNode, result} from './lib';
+/* eslint-disable no-param-reassign */
+import { result } from "./lib";
 
 result(head => {
-    let arr = [];
-    
-    let curr = head.next;
-    while(curr) {
-        arr.push(curr);
-        curr = curr.next;
-    }
+  const arr = [];
 
-    for(let i = arr.length; i > 0; i--) {
-        arr[i-1].next = arr[i-2] || null;
-    }
+  let curr = head.next;
+  while (curr) {
+    arr.push(curr);
+    curr = curr.next;
+  }
 
-    head.next = arr[arr.length - 1];
+  for (let i = arr.length; i > 0; i -= i) {
+    arr[i - 1].next = arr[i - 2] || null;
+  }
+
+  head.next = arr[arr.length - 1];
 });

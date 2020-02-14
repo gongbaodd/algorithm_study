@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "lint": "prettier src/**/*.ts --write && eslint src --ext=ts --fix",
     "commit": "npx git-cz"
   },
   "author": "",
@@ -15,6 +16,7 @@
     "typescript": "^3.7.5"
   },
   "devDependencies": {
+    "@types/jest": "^25.1.2",
     "@typescript-eslint/eslint-plugin": "^2.19.2",
     "@typescript-eslint/parser": "^2.19.2",
     "audit-ci": "^2.4.2",
@@ -22,14 +24,24 @@
     "emoji-cz": "^0.3.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^1.7.0"
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^4.2.3",
+    "prettier": "^1.19.1"
   },
   "config": {
     "commitizen": {
       "path": "emoji-cz"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm lint",
+      "pre-push": "npm test"
     }
   }
 }
