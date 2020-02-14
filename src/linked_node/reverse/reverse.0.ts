@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { LNode, result } from "./lib";
 
 result((head: LNode) => {
@@ -10,18 +11,17 @@ result((head: LNode) => {
   let pre = cur;
   pre.next = null; // in case of a circular reference
 
-  while (1) {
+  for (;;) {
     cur = next as LNode;
     next = cur.next;
 
-    if (next) {
+    if (!next) {
+      head.next = cur;
       cur.next = pre;
-      pre = cur;
-      continue;
+      break;
     }
 
-    head.next = cur;
     cur.next = pre;
-    break;
+    pre = cur;
   }
 });

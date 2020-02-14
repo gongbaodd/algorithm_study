@@ -2,29 +2,42 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    node: true,
+    node: true
   },
   extends: [
-    'plugin:react/recommended',
-    'airbnb',
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:prettier/recommended"
   ],
   globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly"
   },
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: "module"
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-  ],
+  plugins: ["react", "@typescript-eslint"],
   rules: {
-    quotes: ["error", "double"]
+    quotes: ["error", "double"],
+    "import/no-unresolved": ["off"],
+    "import/extensions": ["off"],
+    "import/prefer-default-export": ["off"],
+    "@typescript-eslint/explicit-function-return-type": ["off"]
   },
+  overrides: [
+    {
+      files: ["src/**/*.spec.ts"],
+      rules: {
+        "no-undef": ["off"]
+      }
+    }
+  ]
 };

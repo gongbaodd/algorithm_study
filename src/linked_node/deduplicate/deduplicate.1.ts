@@ -1,13 +1,14 @@
+/* eslint-disable no-param-reassign */
 import { LNode } from "../lib";
 import { result } from "./lib";
 
-result((head) => {
-  const remove_dup = (node: LNode): LNode => {
+result(head => {
+  const removeDup = (node: LNode): LNode => {
     if (node.next === null) {
       return node;
     }
 
-    node.next = remove_dup(node.next);
+    node.next = removeDup(node.next);
     let cursor: LNode | null = node.next;
     let current: LNode = node;
 
@@ -24,7 +25,7 @@ result((head) => {
     return node;
   };
 
-  head.next = remove_dup(head.next as LNode);
+  head.next = removeDup(head.next as LNode);
 
   return head;
 });

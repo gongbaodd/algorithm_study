@@ -16,7 +16,7 @@ result((head1, head2) => {
   const head3 = new LNode(0);
   let cursor3 = head3;
 
-  while (1) {
+  for (;;) {
     const sum = (cursor1?.data ?? 0) + (cursor2?.data ?? 0) + c;
     const node = new LNode(sum % 10);
     c = parseInt((sum / 10).toString(), 10);
@@ -27,17 +27,11 @@ result((head1, head2) => {
     if (cursor1 !== null && cursor2 !== null) {
       cursor1 = cursor1.next;
       cursor2 = cursor2.next;
-      continue;
+    } else if (c === 0) {
+      const [cursor] = [cursor1, cursor2].filter(cur => cur !== null);
+      cursor3.next = cursor?.next ?? null;
+      break;
     }
-
-    if (c > 0) {
-      continue;
-    }
-
-    [cursor1, cursor2]
-      .filter((node) => node === null)
-      .map((node) => cursor3.next = node?.next ?? null);
-    break;
   }
 
   return head3;

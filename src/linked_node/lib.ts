@@ -1,14 +1,20 @@
 export class LNode {
-    data: number = 0;
+  data = 0;
 
-    next: LNode | null = null;
+  next: LNode | null = null;
 
-    constructor(data: number, next?: LNode) {
-      this.data = data;
-      this.next = next ?? this.next;
-    }
+  constructor(data: number, next?: LNode) {
+    this.data = data;
+    this.next = next ?? this.next;
+  }
 }
 
+export function info(text: string, newLine = true) {
+  process.stdout.write(text);
+  if (newLine) {
+    process.stdout.write("\n");
+  }
+}
 
 export function show(head: LNode) {
   if (head.next == null) {
@@ -18,18 +24,18 @@ export function show(head: LNode) {
   let cur = head;
   while (cur.next !== null) {
     cur = cur.next;
-    process.stdout.write(`${cur.data} `);
+    info(`${cur.data} `, false);
   }
-  process.stdout.write("\n");
+  info("");
 }
 
-export function result(init: () => LNode, fn: (node: LNode) => void) {
-  const head = init();
-  console.log("Before:");
+export function result(initFn: () => LNode, fn: (node: LNode) => void) {
+  const head = initFn();
+  info("Before:");
   show(head);
 
   fn(head);
-  console.log("After:");
+  info("After:");
   show(head);
 }
 
@@ -37,10 +43,10 @@ export function init(INIT_DATA: number[]): LNode {
   const head = new LNode(0);
   let curr = head;
 
-  for (const index of INIT_DATA) {
+  INIT_DATA.forEach(index => {
     curr.next = new LNode(index);
     curr = curr.next;
-  }
+  });
 
   return head;
 }

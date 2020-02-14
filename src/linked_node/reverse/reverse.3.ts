@@ -1,6 +1,7 @@
-import { LNode, result } from "./lib";
+/* eslint-disable no-param-reassign */
+import { result } from "./lib";
 
-result((head) => {
+result(head => {
   const arr = [];
 
   let curr = head.next;
@@ -9,7 +10,7 @@ result((head) => {
     curr = curr.next;
   }
 
-  for (let i = arr.length; i > 0; i--) {
+  for (let i = arr.length; i > 0; i -= i) {
     arr[i - 1].next = arr[i - 2] || null;
   }
 

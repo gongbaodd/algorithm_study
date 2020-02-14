@@ -1,22 +1,22 @@
 import { LNode } from "../lib";
 import { result } from "./lib";
 
-result((head) => {
-  let cur_outer = head.next;
-  let cur_inner = cur_outer?.next ?? null;
-  let pre_inner = cur_outer;
+result(head => {
+  let curOuter = head.next;
+  let curInner = curOuter?.next ?? null;
+  let preInner = curOuter;
 
-  while (cur_outer !== null) {
-    while (cur_inner !== null) {
-      if (cur_outer.data === cur_inner.data) {
-        (pre_inner as LNode).next = cur_inner.next;
+  while (curOuter !== null) {
+    while (curInner !== null) {
+      if (curOuter.data === curInner.data) {
+        (preInner as LNode).next = curInner.next;
       }
-      pre_inner = cur_inner;
-      cur_inner = cur_inner?.next ?? null;
+      preInner = curInner;
+      curInner = curInner?.next ?? null;
     }
-    cur_outer = cur_outer.next;
-    cur_inner = cur_outer?.next ?? null;
-    pre_inner = cur_outer;
+    curOuter = curOuter.next;
+    curInner = curOuter?.next ?? null;
+    preInner = curOuter;
   }
 
   return head;

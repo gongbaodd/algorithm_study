@@ -1,4 +1,4 @@
-import { LNode, result as lib_result } from "../lib";
+import { LNode, result as libResult } from "../lib";
 
 const CHAIN_LEN = 8;
 
@@ -11,8 +11,8 @@ export function init(): LNode {
   let tmp: LNode;
   let cur = head;
 
-  while (1) {
-    i++;
+  for (;;) {
+    i += 1;
     tmp = new LNode(i);
     cur.next = tmp;
     cur = tmp;
@@ -25,7 +25,6 @@ export function init(): LNode {
   return head;
 }
 
-export function result(reverse_fn: (node: LNode) => void) {
-  const head = init();
-  lib_result(init, reverse_fn);
+export function result(reverseFn: (node: LNode) => void) {
+  libResult(init, reverseFn);
 }

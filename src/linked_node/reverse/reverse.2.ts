@@ -1,6 +1,7 @@
-import { LNode, result } from "./lib";
+/* eslint-disable no-param-reassign */
+import { result } from "./lib";
 
-result((head) => {
+result(head => {
   if (head.next == null) {
     return;
   }
@@ -8,7 +9,7 @@ result((head) => {
   const current = head.next;
   let { next } = current;
 
-  while (1) {
+  for (;;) {
     if (next == null) {
       break;
     }
