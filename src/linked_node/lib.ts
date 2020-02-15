@@ -29,14 +29,14 @@ export function show(head: LNode) {
   info("");
 }
 
-export function result(initFn: () => LNode, fn: (node: LNode) => void) {
+export function result(initFn: () => LNode, fn: (node: LNode) => LNode) {
   const head = initFn();
   info("Before:");
   show(head);
 
-  fn(head);
+  const newHead = fn(head);
   info("After:");
-  show(head);
+  show(newHead);
 }
 
 export function init(INIT_DATA: number[]): LNode {

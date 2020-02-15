@@ -25,6 +25,6 @@ export function init(): LNode {
   return head;
 }
 
-export function result(reverseFn: (node: LNode) => void) {
+export function result(reverseFn: (node: LNode) => LNode) {
   libResult(init, reverseFn);
 }
