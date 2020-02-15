@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "lint": "prettier src/**/*.ts --write && eslint src --ext=ts --fix",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "ci:audit": "audit-ci"
   },
   "author": "",
   "license": "ISC",
@@ -42,7 +43,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint",
+      "pre-commit": "yarn ci:audit && yarn lint",
       "pre-push": "yarn test"
     }
   }
