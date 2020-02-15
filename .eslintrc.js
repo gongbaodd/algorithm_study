@@ -39,6 +39,12 @@ module.exports = {
         "no-undef": ["off"],
         "import/first": ["off"]
       }
+    },
+    {
+      files: ["config/**.js"],
+      env: {
+        es6: false
+      }
     }
   ]
 };
