@@ -36,7 +36,8 @@ module.exports = {
     {
       files: ["src/**/*.spec.ts"],
       rules: {
-        "no-undef": ["off"]
+        "no-undef": ["off"],
+        "import/first": ["off"]
       }
     }
   ]

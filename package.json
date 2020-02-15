@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "build": "tsc",
     "lint": "prettier src/**/*.ts --write && eslint src --ext=ts --fix",
     "commit": "npx git-cz",
     "ci:audit": "audit-ci"
@@ -43,7 +44,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn ci:audit && yarn lint",
+      "pre-commit": "yarn build && yarn ci:audit && yarn lint",
       "pre-push": "yarn test"
     }
   }
