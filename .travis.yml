@@ -1,0 +1,7 @@
+language: node_js
+install:
+  - yarn
+script:
+  - yarn test
+after_script:
+  - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN > /dev/null
