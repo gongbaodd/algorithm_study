@@ -1,31 +1,30 @@
-/* eslint-disable no-param-reassign */
-import { LNode, result } from "./lib";
+import { LNode } from "../lib";
 
-result(
-  (head: LNode): LNode => {
-    if (head.next == null) {
-      return head;
-    }
+export function reversefn(_head: LNode): LNode {
+  const head = _head;
 
-    let cur = head.next;
-    let { next } = cur;
-    let pre = cur;
-    pre.next = null; // in case of a circular reference
-
-    for (;;) {
-      cur = next as LNode;
-      next = cur.next;
-
-      if (!next) {
-        head.next = cur;
-        cur.next = pre;
-        break;
-      }
-
-      cur.next = pre;
-      pre = cur;
-    }
-
+  if (head.next == null) {
     return head;
   }
-);
+
+  let cur = head.next;
+  let { next } = cur;
+  let pre = cur;
+  pre.next = null; // in case of a circular reference
+
+  for (;;) {
+    cur = next as LNode;
+    next = cur.next;
+
+    if (!next) {
+      head.next = cur;
+      cur.next = pre;
+      break;
+    }
+
+    cur.next = pre;
+    pre = cur;
+  }
+
+  return head;
+}
