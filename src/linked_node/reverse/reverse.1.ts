@@ -1,24 +1,29 @@
-/* eslint-disable no-param-reassign */
-import { LNode, result } from "./lib";
+import { LNode } from "../lib";
 
-result(
-  (head): LNode => {
-    const first = head.next;
-    const reverse = (node: LNode): LNode => {
-      if (node.next == null) {
-        return node;
-      }
+export const reversefn = (_head: LNode): LNode => {
+  const head = _head;
 
-      const last = reverse(node.next);
-      node.next.next = node; // reverse the next pointer back to self
-      node.next = null;
-
-      return last;
-    };
-
-    const last = reverse(first as LNode);
-    head.next = last;
-
+  if (!head.next) {
     return head;
   }
-);
+
+  const first = head.next;
+  const reverse = (_node: LNode): LNode => {
+    const node = _node;
+
+    if (node.next == null) {
+      return node;
+    }
+
+    const last = reverse(node.next);
+    node.next.next = node; // reverse the next pointer back to self
+    node.next = null;
+
+    return last;
+  };
+
+  const last = reverse(first as LNode);
+  head.next = last;
+
+  return head;
+};
