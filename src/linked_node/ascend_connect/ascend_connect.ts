@@ -14,7 +14,7 @@ export function ascendConnect(head1: LNode, head2: LNode): LNode {
   let cur2: LNode | null = head2.next;
 
   while (cur2 && cur1) {
-    if (cur1.data < cur2.data) {
+    if ((cur1.data || 0) < (cur2.data || 0)) {
       const next2: LNode | null = cur2?.next ?? null;
 
       pre1.next = cur2;
