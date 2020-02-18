@@ -1,54 +1,51 @@
-import { LNode } from '../linked_node/lib';
+import { LNode } from "../linked_node/lib";
 
 export class Stack<T> {
-    private pHead: LNode<T> = new LNode();
+  private pHead: LNode<T> = new LNode();
 
-    isEmpty(): boolean {
-        return this.pHead.next === null;
+  isEmpty(): boolean {
+    return this.pHead.next === null;
+  }
+
+  size(): number {
+    let size = 0;
+    let p: LNode<T> | null = this.pHead;
+
+    for (;;) {
+      p = p?.next ?? null;
+
+      if (p) {
+        size += 1;
+      } else {
+        break;
+      }
     }
 
-    size(): number {
-        let size = 0;
-        let p: LNode<T> | null = this.pHead;
+    return size;
+  }
 
-        for (; ;) {
-            p = p?.next ?? null;
+  push(e: T) {
+    const p = new LNode(e, this.pHead.next);
+    this.pHead.next = p;
+  }
 
-            if (p) {
-                size += 1;
-            } else {
-                break;
-            }
-        }
-
-        return size;
+  pop(): T | null {
+    if (this.isEmpty()) {
+      return null;
     }
 
-    push(e: T) {
-        const p = new LNode(e, this.pHead.next);
-        this.pHead.next = p;
+    const tmp = this.pHead.next as LNode<T>;
+    this.pHead.next = tmp.next;
+    return tmp.data;
+  }
+
+  top(): T | null {
+    const data = this.pop();
+
+    if (data !== null) {
+      this.push(data);
     }
 
-    pop(): T | null {
-        if (this.isEmpty()) {
-            return null;
-        }
-
-        let tmp = this.pHead.next as LNode<T>;
-        this.pHead.next = tmp.next;
-        return tmp.data;
-    }
-
-
-
-    top(): T | null {
-        let data = this.pop();
-
-        if (data !== null) {
-            this.push(data);
-        }
-
-        return data;
-    }
-
+    return data;
+  }
 }
