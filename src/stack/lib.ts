@@ -11,7 +11,7 @@ export class Stack<T> {
     let size = 0;
     let p: LNode<T> | null = this.pHead;
 
-    for (;;) {
+    for (; ;) {
       p = p?.next ?? null;
 
       if (p) {
@@ -47,5 +47,15 @@ export class Stack<T> {
     }
 
     return data;
+  }
+
+  static from<T>(arr: T[]) {
+    const s = new Stack<T>();
+
+    arr.forEach(item => {
+      s.push(item);
+    });
+
+    return s;
   }
 }
