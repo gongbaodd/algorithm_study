@@ -11,7 +11,7 @@ export class Stack<T> {
     let size = 0;
     let p: LNode<T> | null = this.pHead;
 
-    for (; ;) {
+    for (;;) {
       p = p?.next ?? null;
 
       if (p) {

@@ -16,7 +16,7 @@ describe("reverse", () => {
       const s = Stack.from([1, 2, 3, 4, 5]);
       reverse(s);
 
-      expect(s.top).toEqual(1);
+      expect(s.top()).toEqual(1);
       expect(s).toMatchSnapshot();
     });
   });
