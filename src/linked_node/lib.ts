@@ -1,9 +1,9 @@
-export class LNode {
-  data = 0;
+export class LNode<T = number> {
+  data: T | null;
 
-  next: LNode | null = null;
+  next: LNode<T> | null = null;
 
-  constructor(data: number, next?: LNode) {
+  constructor(data: T | null = null, next: LNode<T> | null = null) {
     this.data = data;
     this.next = next ?? this.next;
   }
