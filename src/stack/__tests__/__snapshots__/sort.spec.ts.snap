@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sort stack provide a stack [2, 1, 4, 1, 5] should return 5,4,2,1,1 1`] = `
+Stack {
+  "pHead": LNode {
+    "data": null,
+    "next": LNode {
+      "data": 5,
+      "next": LNode {
+        "data": 4,
+        "next": LNode {
+          "data": 2,
+          "next": LNode {
+            "data": 1,
+            "next": LNode {
+              "data": 1,
+              "next": null,
+            },
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`sort stack provide an empty stack should do nothing 1`] = `
+Stack {
+  "pHead": LNode {
+    "data": null,
+    "next": null,
+  },
+}
+`;
