@@ -48,4 +48,14 @@ export class Stack<T> {
 
     return data;
   }
+
+  static from<T>(arr: T[]) {
+    const s = new Stack<T>();
+
+    arr.forEach(item => {
+      s.push(item);
+    });
+
+    return s;
+  }
 }
