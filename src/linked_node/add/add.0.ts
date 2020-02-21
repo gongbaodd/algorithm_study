@@ -1,7 +1,6 @@
 import { LNode } from "../lib";
-import { result } from "./lib";
 
-result((head1, head2) => {
+export const add = (head1: LNode, head2: LNode): LNode => {
   if (head1.next === null) {
     return head2;
   }
@@ -35,4 +34,4 @@ result((head1, head2) => {
   }
 
   return head3;
-});
+};

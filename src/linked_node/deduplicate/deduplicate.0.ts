@@ -1,7 +1,6 @@
 import { LNode } from "../lib";
-import { result } from "./lib";
 
-result(head => {
+export const deduplicate = (head: LNode): LNode => {
   let curOuter = head.next;
   let curInner = curOuter?.next ?? null;
   let preInner = curOuter;
@@ -20,4 +19,4 @@ result(head => {
   }
 
   return head;
-});
+};
