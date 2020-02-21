@@ -1,9 +1,9 @@
-/* eslint-disable no-param-reassign */
 import { LNode } from "../lib";
-import { result } from "./lib";
 
-result(head => {
-  const removeDup = (node: LNode): LNode => {
+export const deduplicate = (_head: LNode): LNode => {
+  const head = _head;
+  const removeDup = (_node: LNode): LNode => {
+    const node = _node;
     if (node.next === null) {
       return node;
     }
@@ -28,4 +28,4 @@ result(head => {
   head.next = removeDup(head.next as LNode);
 
   return head;
-});
+};
