@@ -1,9 +1,9 @@
 import { LNode } from "../linked_node/lib";
 
 export class Queue<T> {
-  private pHead: LNode<T> | null = null;
+  protected pHead: LNode<T> | null = null;
 
-  private pEnd: LNode<T> | null = null;
+  protected pEnd: LNode<T> | null = null;
 
   get top() {
     return this.pHead?.data ?? null;
