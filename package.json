@@ -9,7 +9,7 @@
     "build": "tsc",
     "lint": "prettier src/**/*.ts --write && eslint src --ext=ts --fix",
     "commit": "npx git-cz",
-    "ci:audit": "audit-ci"
+    "audit:ci": "audit-ci"
   },
   "author": "",
   "license": "ISC",
@@ -49,7 +49,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn build && yarn ci:audit && yarn lint"
+      "pre-commit": "yarn build && yarn audit:ci && yarn lint"
     }
   }
 }
