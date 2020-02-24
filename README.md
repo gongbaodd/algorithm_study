@@ -1,6 +1,6 @@
 # algorithm_study
 
-<a href="#striker">
+<a href="https://dashboard.stryker-mutator.io/reports/github.com/gongbaodd/algorithm_study/master">
     <img src="https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fgongbaodd%2Falgorithm_study%2Fmaster" alt="stryker">
 </a>
 <a href="https://travis-ci.com/gongbaodd/algorithm_study">

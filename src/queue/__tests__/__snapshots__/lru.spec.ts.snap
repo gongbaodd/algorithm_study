@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LRU access serial is [1,2,5,1,6,7,6] should cache [7, 6, 1] 1`] = `
+LRU {
+  "hashSet": Set {
+    1,
+    6,
+    7,
+  },
+  "length": 3,
+  "queue": Queue {
+    "pEnd": LNode {
+      "data": 6,
+      "next": null,
+    },
+    "pHead": LNode {
+      "data": 1,
+      "next": LNode {
+        "data": 6,
+        "next": LNode {
+          "data": 7,
+          "next": LNode {
+            "data": 6,
+            "next": null,
+          },
+        },
+      },
+    },
+  },
+}
+`;

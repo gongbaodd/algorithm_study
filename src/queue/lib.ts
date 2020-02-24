@@ -60,4 +60,38 @@ export class Queue<T> {
       this.pEnd = this.pHead;
     }
   }
+
+  remove(item: T) {
+    if (!this.pHead?.next) {
+      return;
+    }
+
+    let current: LNode<T> | null = this.pHead;
+    let prev: LNode<T> | null = null;
+
+    for (;;) {
+      if (current === null) {
+        return;
+      }
+
+      if (current.data === item) {
+        if (prev) {
+          prev.next = current.next;
+
+          if (!prev.next) {
+            this.pEnd = prev;
+          }
+        } else {
+          this.pHead = this.pHead.next;
+        }
+
+        current = null;
+
+        return;
+      }
+
+      current = current.next;
+      prev = current;
+    }
+  }
 }
