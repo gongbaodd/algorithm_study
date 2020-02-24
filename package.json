@@ -19,9 +19,6 @@
     "typescript": "^3.7.5"
   },
   "devDependencies": {
-    "@stryker-mutator/core": "^2.5.0",
-    "@stryker-mutator/jest-runner": "^2.5.0",
-    "@stryker-mutator/typescript": "^2.5.0",
     "@types/jest": "^25.1.2",
     "@typescript-eslint/eslint-plugin": "^2.19.2",
     "@typescript-eslint/parser": "^2.19.2",
@@ -39,7 +36,10 @@
     "husky": "^4.2.3",
     "jest": "^25.1.0",
     "prettier": "^1.19.1",
-    "stryker-cli": "^1.0.0",
+    "stryker": "^0.35.1",
+    "stryker-api": "^0.24.1",
+    "stryker-jest-runner": "^1.4.1",
+    "stryker-typescript": "^0.18.1",
     "ts-jest": "^25.2.0"
   },
   "config": {

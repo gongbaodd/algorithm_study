@@ -1,7 +1,7 @@
 module.exports = function stryker(config) {
   config.set({
     mutator: "typescript",
-    mutate: ["src/linked_node/check_cross/*.ts"],
+    mutate: ["src/linked_node/last_k/*.ts"],
     packageManager: "yarn",
     reporters: ["clear-text", "progress"],
     testRunner: "jest",
