@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:mut": "stryker run",
     "build": "tsc",
     "lint": "prettier src/**/*.ts --write && eslint src --ext=ts --fix",
     "commit": "npx git-cz",
@@ -35,6 +36,10 @@
     "husky": "^4.2.3",
     "jest": "^25.1.0",
     "prettier": "^1.19.1",
+    "stryker": "^0.35.1",
+    "stryker-api": "^0.24.1",
+    "stryker-jest-runner": "^1.4.1",
+    "stryker-typescript": "^0.18.1",
     "ts-jest": "^25.2.0"
   },
   "config": {
