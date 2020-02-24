@@ -3,7 +3,7 @@ module.exports = function stryker(config) {
     mutator: "typescript",
     mutate: ["src/linked_node/**/*.ts", "!src/**/*.spec.ts"],
     packageManager: "yarn",
-    reporters: ["clear-text", "progress", "html", "dashboard"],
+    reporters: ["clear-text", "dashboard", "progress"],
     testRunner: "jest",
     coverageAnalysis: "off",
     tsconfigFile: "tsconfig.json",

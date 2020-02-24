@@ -3,7 +3,7 @@ install:
   - yarn
 script:
   - yarn build
-  - yarn ci:audit
+  - yarn audit:ci
   - yarn lint
   - yarn test
   - yarn test:mut
