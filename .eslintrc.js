@@ -27,6 +27,7 @@ module.exports = {
   plugins: ["react", "@typescript-eslint"],
   rules: {
     quotes: ["error", "double"],
+    "no-bitwise": ["off"],
     "import/no-unresolved": ["off"],
     "import/extensions": ["off"],
     "import/prefer-default-export": ["off"],

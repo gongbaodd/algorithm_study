@@ -12,7 +12,7 @@ export function toTree(
     return root;
   }
 
-  const mid = parseInt(((start + end) / 2).toString(), 10);
+  const mid = ((start + end) / 2) | 0;
 
   root.data = arr[mid];
 
