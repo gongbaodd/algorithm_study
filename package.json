@@ -54,6 +54,6 @@
     "commit": "npx git-cz",
     "audit:ci": "audit-ci",
     "cp:cname": "sh ./scripts/cp_cname.sh",
-    "deploy": "gh-pages -d reports -r https://$GH_TOKEN@github.com/gongbaodd/algorithm_study.git -b master"
+    "deploy": "gh-pages -d reports/mutation/html -r https://$GH_TOKEN@github.com/gongbaodd/algorithm_study.git -b master"
   }
 }
