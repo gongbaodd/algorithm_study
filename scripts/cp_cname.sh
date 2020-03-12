@@ -1,1 +1,1 @@
-cp CNAME ./reports/
+cp CNAME ./reports/mutation/html/
