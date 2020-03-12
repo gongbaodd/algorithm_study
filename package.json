@@ -3,14 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "test:mut": "stryker run",
-    "build": "tsc",
-    "lint": "prettier src/**/*.ts --write && eslint src --ext=ts --fix",
-    "commit": "npx git-cz",
-    "audit:ci": "audit-ci"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -33,6 +25,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "gh-pages": "^2.2.0",
     "husky": "^4.2.3",
     "jest": "^25.1.0",
     "prettier": "^1.19.1",
@@ -52,5 +45,15 @@
     "hooks": {
       "pre-commit": "yarn build && yarn audit:ci && yarn lint"
     }
+  },
+  "scripts": {
+    "test": "jest",
+    "test:mut": "stryker run",
+    "build": "tsc",
+    "lint": "prettier src/**/*.ts --write && eslint src --ext=ts --fix",
+    "commit": "npx git-cz",
+    "audit:ci": "audit-ci",
+    "cp:cname": "sh ./scripts/cp_cname.sh",
+    "deploy": "gh-pages -d reports -r https://$GH_TOKEN@github.com/gongbaodd/algorithm_study.git -b master"
   }
 }

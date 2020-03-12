@@ -6,6 +6,6 @@ script:
   - yarn audit:ci
   - yarn lint
   - yarn test
-  - yarn test:mut
+  - if [ "$TRAVIS_BRANCH" = "prd" ]; then yarn test:mut && yarn cp:cname && yarn deploy; fi
 after_script:
   - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN > /dev/null
