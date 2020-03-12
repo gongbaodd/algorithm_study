@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html><head><title>rearrange/rearrange.0.ts
+ - Stryker report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../strykerResources/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../strykerResources/highlightjs/styles/default.css">
+<link rel="stylesheet" href="../strykerResources/stryker/stryker.css"></head>
+<body><img class="stryker-image" alt="Stryker" src="../strykerResources/stryker/stryker-80x80.png">
+<div class="container-fluid"><div class="row"><div class="col-lg-12"><h1 class="display-4">rearrange/rearrange.0.ts
+ 
+<small class="text-muted">- Stryker report</small></h1></div></div>
+<ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">All files</a></li>
+<li class="breadcrumb-item active">rearrange/rearrange.0.ts</li></ol>
+<div class="row"><div class="col-lg-12"><div class="row"><div class="col-sm-11"><table class="table table-sm table-hover table-bordered table-no-top"><thead><tr><th style="width: 20%"><div><span>File / Directory</span></div></th>
+<th colspan="2"><div><span>Mutation score</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Killed</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Survived</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Timeout</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># No coverage</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Runtime errors</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Transpile errors</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total detected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total undetected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total mutants</span></div></th></tr></thead>
+<tbody><tr><td>rearrange/rearrange.0.ts</td>
+<td><div class="progress"><div class="progress-bar bg-success" role="progressbar" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" style="width: 100.00%;">100.00
+%</div></div></td>
+<th class="text-center text-success" style="width: 10%">100.00</th>
+<td class="text-center">29</td>
+<td class="text-center">0</td>
+<td class="text-center">4</td>
+<td class="text-center">0</td>
+<td class="text-center">18</td>
+<td class="text-center">0</td>
+<th class="text-center">33</th>
+<th class="text-center">0</th>
+<th class="text-center">51</th></tr>
+</tbody></table></div></div>
+<div class="row"><div class="col-lg-7"><div class="row legend"><form class="col-md-12" novalidate="novalidate">
+
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" value="1" type="checkbox">
+Killed
+ 
+(29)</label></div>
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" value="3" type="checkbox">
+TimedOut
+ 
+(4)</label></div>
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" value="4" type="checkbox">
+RuntimeError
+ 
+(18)</label></div>
+
+<a href="#" class="stryker-collapse-expand-all">Expand all</a></form></div>
+<pre><code class="lang-javascript"><span class="bg-null">import { LNode } from &quot;../lib&quot;;
+
+export function reverse(_node: LNode): LNode </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="0"><span class="badge badge-secondary">0</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="0">{}</span><span class="stryker-original-code" data-mutant="0"><span class="bg-null">{
+  const node = _node;
+
+  if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="1"><span class="badge badge-secondary">1</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="1">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="2"><span class="badge badge-secondary">2</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="2">false</span><span class="stryker-original-code" data-mutant="1"><span class="stryker-original-code" data-mutant="2"><span class="bg-null">node.next </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="3"><span class="badge badge-secondary">3</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="3">!==</span><span class="stryker-original-code" data-mutant="3"><span class="bg-null">===</span></span><span class="bg-null"> null</span></span></span><span class="bg-null">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="4"><span class="badge badge-secondary">4</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="4">{}</span><span class="stryker-original-code" data-mutant="4"><span class="bg-null">{
+    return node;
+  }</span></span><span class="bg-null">
+
+  const newFirst = reverse(node.next);
+  </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="5"><span class="badge badge-success">5</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="5">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="6"><span class="badge badge-success">6</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="6">true</span><span class="stryker-original-code" data-mutant="5"><span class="stryker-original-code" data-mutant="6"><span class="bg-success-light">node.next.next = node</span></span></span><span class="bg-null">;
+  </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: TimedOut" data-mutant-status-annotation="warning" data-mutant-status="3" data-mutant="7"><span class="badge badge-warning">7</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="7">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: TimedOut" data-mutant-status-annotation="warning" data-mutant-status="3" data-mutant="8"><span class="badge badge-warning">8</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="8">true</span><span class="stryker-original-code" data-mutant="7"><span class="stryker-original-code" data-mutant="8"><span class="bg-warning-light">node.next = null</span></span></span><span class="bg-null">;
+
+  return newFirst;
+}</span></span><span class="bg-null">
+
+export function rearrage(head: LNode): LNode </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="9"><span class="badge badge-secondary">9</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="9">{}</span><span class="stryker-original-code" data-mutant="9"><span class="bg-null">{
+  if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="10"><span class="badge badge-secondary">10</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="10">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="11"><span class="badge badge-secondary">11</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="11">head.next</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="12"><span class="badge badge-secondary">12</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="12">true</span><span class="stryker-original-code" data-mutant="10"><span class="stryker-original-code" data-mutant="11"><span class="stryker-original-code" data-mutant="12"><span class="bg-null">!head.next</span></span></span></span><span class="bg-null">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="13"><span class="badge badge-secondary">13</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="13">{}</span><span class="stryker-original-code" data-mutant="13"><span class="bg-null">{
+    return head;
+  }</span></span><span class="bg-null">
+
+  let slowCursor = head.next;
+  let fastCursor = head.next.next;
+
+  while (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="WhileStatement" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="14"><span class="badge badge-secondary">14</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="14">false</span><span class="stryker-original-code" data-mutant="14"><span class="bg-null">fastCursor</span></span><span class="bg-null">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: TimedOut" data-mutant-status-annotation="warning" data-mutant-status="3" data-mutant="15"><span class="badge badge-warning">15</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="15">{}</span><span class="stryker-original-code" data-mutant="15"><span class="bg-warning-light">{
+    </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="16"><span class="badge badge-success">16</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="16">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="17"><span class="badge badge-success">17</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="17">true</span><span class="stryker-original-code" data-mutant="16"><span class="stryker-original-code" data-mutant="17"><span class="bg-warning-light">slowCursor = slowCursor.next as LNode</span></span></span><span class="bg-warning-light">;
+    </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="18"><span class="badge badge-success">18</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="18">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="19"><span class="badge badge-success">19</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="19">true</span><span class="stryker-original-code" data-mutant="18"><span class="stryker-original-code" data-mutant="19"><span class="bg-warning-light">fastCursor = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="20"><span class="badge badge-secondary">20</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="20">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="21"><span class="badge badge-secondary">21</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="21">true</span><span class="stryker-original-code" data-mutant="20"><span class="stryker-original-code" data-mutant="21"><span class="bg-warning-light">fastCursor.next?.next ?? null</span></span></span></span></span><span class="bg-warning-light">;
+  }</span></span><span class="bg-null">
+
+  type nextNode = PropType&lt;LNode, &quot;next&quot;&gt;;
+
+  let tailCursor: nextNode = reverse(slowCursor);
+  let headCursor: nextNode = head.next;
+
+  </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ForStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="22"><span class="badge badge-success">22</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="22">for (; false;) {
+    const headNext: nextNode = headCursor?.next ?? null;
+    const tailNext: nextNode = tailCursor?.next ?? null;
+    const leftCursors = [headCursor, tailCursor].filter(cursor =&gt; cursor !== null);
+    if (leftCursors.length === 0) {
+        break;
+    }
+    if (leftCursors.length === 1) {
+        (leftCursors[0] as LNode).next = null;
+        break;
+    }
+    (headCursor as LNode).next = tailCursor;
+    (tailCursor as LNode).next = headNext;
+    headCursor = headNext;
+    tailCursor = tailNext;
+}</span><span class="stryker-original-code" data-mutant="22"><span class="bg-success-light">for (;;) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: TimedOut" data-mutant-status-annotation="warning" data-mutant-status="3" data-mutant="23"><span class="badge badge-warning">23</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="23">{}</span><span class="stryker-original-code" data-mutant="23"><span class="bg-warning-light">{
+    const headNext: nextNode = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="24"><span class="badge badge-secondary">24</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="24">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="25"><span class="badge badge-secondary">25</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="25">true</span><span class="stryker-original-code" data-mutant="24"><span class="stryker-original-code" data-mutant="25"><span class="bg-warning-light">headCursor?.next ?? null</span></span></span><span class="bg-warning-light">;
+    const tailNext: nextNode = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="26"><span class="badge badge-secondary">26</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="26">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="27"><span class="badge badge-secondary">27</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="27">true</span><span class="stryker-original-code" data-mutant="26"><span class="stryker-original-code" data-mutant="27"><span class="bg-warning-light">tailCursor?.next ?? null</span></span></span><span class="bg-warning-light">;
+
+    const leftCursors = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayLiteral" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="28"><span class="badge badge-success">28</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="28">[]</span><span class="stryker-original-code" data-mutant="28"><span class="bg-warning-light">[headCursor, tailCursor]</span></span><span class="bg-warning-light">.filter(
+      </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrowFunction" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="29"><span class="badge badge-success">29</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="29">() =&gt; undefined</span><span class="stryker-original-code" data-mutant="29"><span class="bg-warning-light">cursor =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="30"><span class="badge badge-success">30</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="30">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="31"><span class="badge badge-success">31</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="31">false</span><span class="stryker-original-code" data-mutant="30"><span class="stryker-original-code" data-mutant="31"><span class="bg-warning-light">cursor </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="32"><span class="badge badge-success">32</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="32">===</span><span class="stryker-original-code" data-mutant="32"><span class="bg-warning-light">!==</span></span><span class="bg-warning-light"> null</span></span></span></span><span class="bg-warning-light">
+    );
+
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="33"><span class="badge badge-success">33</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="33">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="34"><span class="badge badge-success">34</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="34">false</span><span class="stryker-original-code" data-mutant="33"><span class="stryker-original-code" data-mutant="34"><span class="bg-warning-light">leftCursors.length </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="35"><span class="badge badge-secondary">35</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="35">!==</span><span class="stryker-original-code" data-mutant="35"><span class="bg-warning-light">===</span></span><span class="bg-warning-light"> 0</span></span></span><span class="bg-warning-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="36"><span class="badge badge-success">36</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="36">{}</span><span class="stryker-original-code" data-mutant="36"><span class="bg-warning-light">{
+      break;
+    }</span></span><span class="bg-warning-light">
+
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="37"><span class="badge badge-success">37</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="37">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="38"><span class="badge badge-success">38</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="38">false</span><span class="stryker-original-code" data-mutant="37"><span class="stryker-original-code" data-mutant="38"><span class="bg-warning-light">leftCursors.length </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="39"><span class="badge badge-success">39</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="39">!==</span><span class="stryker-original-code" data-mutant="39"><span class="bg-warning-light">===</span></span><span class="bg-warning-light"> 1</span></span></span><span class="bg-warning-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="40"><span class="badge badge-success">40</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="40">{}</span><span class="stryker-original-code" data-mutant="40"><span class="bg-warning-light">{
+      </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="41"><span class="badge badge-success">41</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="41">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="42"><span class="badge badge-success">42</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="42">true</span><span class="stryker-original-code" data-mutant="41"><span class="stryker-original-code" data-mutant="42"><span class="bg-warning-light">(leftCursors[0] as LNode).next = null</span></span></span><span class="bg-warning-light">;
+      break;
+    }</span></span><span class="bg-warning-light">
+
+    </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="43"><span class="badge badge-success">43</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="43">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="44"><span class="badge badge-success">44</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="44">true</span><span class="stryker-original-code" data-mutant="43"><span class="stryker-original-code" data-mutant="44"><span class="bg-warning-light">(headCursor as LNode).next = tailCursor</span></span></span><span class="bg-warning-light">;
+    </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="45"><span class="badge badge-success">45</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="45">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="46"><span class="badge badge-success">46</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="46">true</span><span class="stryker-original-code" data-mutant="45"><span class="stryker-original-code" data-mutant="46"><span class="bg-warning-light">(tailCursor as LNode).next = headNext</span></span></span><span class="bg-warning-light">;
+
+    </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="47"><span class="badge badge-success">47</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="47">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="48"><span class="badge badge-success">48</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="48">true</span><span class="stryker-original-code" data-mutant="47"><span class="stryker-original-code" data-mutant="48"><span class="bg-warning-light">headCursor = headNext</span></span></span><span class="bg-warning-light">;
+    </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="49"><span class="badge badge-success">49</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="49">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="50"><span class="badge badge-success">50</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="50">true</span><span class="stryker-original-code" data-mutant="49"><span class="stryker-original-code" data-mutant="50"><span class="bg-warning-light">tailCursor = tailNext</span></span></span><span class="bg-warning-light">;
+  }</span></span></span><span class="bg-null">
+
+  return head;
+}</span></span><span class="bg-null">
+</code></pre></div>
+<div class="col-lg-5"><table class="table table-sm table-hover mutant-table"><thead><tr><th>#</th>
+<th>Mutator</th>
+<th>State</th>
+<th>Location</th>
+<th>Original</th>
+<th>Replacement</th></tr></thead>
+<tbody><tr><th>0</th>
+<td>Block</td>
+<td>RuntimeError</td>
+<td>2
+:
+45</td>
+<td><code>{
+   ...  ;
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>1</th>
+<td>IfStatement</td>
+<td>RuntimeError</td>
+<td>5
+:
+6</td>
+<td><code>.     ===</code></td>
+<td><code></code></td></tr>
+<tr><th>2</th>
+<td>IfStatement</td>
+<td>RuntimeError</td>
+<td>5
+:
+6</td>
+<td><code>.     ===</code></td>
+<td><code></code></td></tr>
+<tr><th>3</th>
+<td>BinaryExpression</td>
+<td>RuntimeError</td>
+<td>5
+:
+16</td>
+<td><code>===</code></td>
+<td><code>!==</code></td></tr>
+<tr><th>4</th>
+<td>Block</td>
+<td>RuntimeError</td>
+<td>5
+:
+26</td>
+<td><code>{
+   ...;
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>5</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>10
+:
+2</td>
+<td><code>.    .     =</code></td>
+<td><code></code></td></tr>
+<tr><th>6</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>10
+:
+2</td>
+<td><code>.    .     =</code></td>
+<td><code></code></td></tr>
+<tr><th>7</th>
+<td>ConditionalExpression</td>
+<td>TimedOut</td>
+<td>11
+:
+2</td>
+<td><code>.     =</code></td>
+<td><code></code></td></tr>
+<tr><th>8</th>
+<td>ConditionalExpression</td>
+<td>TimedOut</td>
+<td>11
+:
+2</td>
+<td><code>.     =</code></td>
+<td><code></code></td></tr>
+<tr><th>9</th>
+<td>Block</td>
+<td>RuntimeError</td>
+<td>16
+:
+45</td>
+<td><code>{
+   ...  ;
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>10</th>
+<td>IfStatement</td>
+<td>RuntimeError</td>
+<td>17
+:
+6</td>
+<td><code>!    .</code></td>
+<td><code></code></td></tr>
+<tr><th>11</th>
+<td>PrefixUnaryExpression</td>
+<td>RuntimeError</td>
+<td>17
+:
+6</td>
+<td><code>!    .</code></td>
+<td><code>.</code></td></tr>
+<tr><th>12</th>
+<td>IfStatement</td>
+<td>RuntimeError</td>
+<td>17
+:
+6</td>
+<td><code>!    .</code></td>
+<td><code></code></td></tr>
+<tr><th>13</th>
+<td>Block</td>
+<td>RuntimeError</td>
+<td>17
+:
+18</td>
+<td><code>{
+   ...;
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>14</th>
+<td>WhileStatement</td>
+<td>RuntimeError</td>
+<td>24
+:
+9</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>15</th>
+<td>Block</td>
+<td>TimedOut</td>
+<td>24
+:
+21</td>
+<td><code>{
+   ...;
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>16</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>25
+:
+4</td>
+<td><code>=           .</code></td>
+<td><code></code></td></tr>
+<tr><th>17</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>25
+:
+4</td>
+<td><code>=           .</code></td>
+<td><code></code></td></tr>
+<tr><th>18</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>26
+:
+4</td>
+<td><code>=    ...   ??</code></td>
+<td><code></code></td></tr>
+<tr><th>19</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>26
+:
+4</td>
+<td><code>=    ...   ??</code></td>
+<td><code></code></td></tr>
+<tr><th>20</th>
+<td>ConditionalExpression</td>
+<td>RuntimeError</td>
+<td>26
+:
+17</td>
+<td><code>.    ?.     ??</code></td>
+<td><code></code></td></tr>
+<tr><th>21</th>
+<td>ConditionalExpression</td>
+<td>RuntimeError</td>
+<td>26
+:
+17</td>
+<td><code>.    ?.     ??</code></td>
+<td><code></code></td></tr>
+<tr><th>22</th>
+<td>ForStatement</td>
+<td>Killed</td>
+<td>34
+:
+2</td>
+<td><code>(;;) ...;
+  }</code></td>
+<td><code>(;   ...  ;
+}</code></td></tr>
+<tr><th>23</th>
+<td>Block</td>
+<td>TimedOut</td>
+<td>34
+:
+11</td>
+<td><code>{
+   ...;
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>24</th>
+<td>ConditionalExpression</td>
+<td>RuntimeError</td>
+<td>35
+:
+31</td>
+<td><code>?.     ??</code></td>
+<td><code></code></td></tr>
+<tr><th>25</th>
+<td>ConditionalExpression</td>
+<td>RuntimeError</td>
+<td>35
+:
+31</td>
+<td><code>?.     ??</code></td>
+<td><code></code></td></tr>
+<tr><th>26</th>
+<td>ConditionalExpression</td>
+<td>RuntimeError</td>
+<td>36
+:
+31</td>
+<td><code>?.     ??</code></td>
+<td><code></code></td></tr>
+<tr><th>27</th>
+<td>ConditionalExpression</td>
+<td>RuntimeError</td>
+<td>36
+:
+31</td>
+<td><code>?.     ??</code></td>
+<td><code></code></td></tr>
+<tr><th>28</th>
+<td>ArrayLiteral</td>
+<td>Killed</td>
+<td>38
+:
+24</td>
+<td><code>[    ...    ]</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>29</th>
+<td>ArrowFunction</td>
+<td>Killed</td>
+<td>39
+:
+6</td>
+<td><code>=>        !==</code></td>
+<td><code>() =></code></td></tr>
+<tr><th>30</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>39
+:
+16</td>
+<td><code>!==</code></td>
+<td><code></code></td></tr>
+<tr><th>31</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>39
+:
+16</td>
+<td><code>!==</code></td>
+<td><code></code></td></tr>
+<tr><th>32</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>39
+:
+23</td>
+<td><code>!==</code></td>
+<td><code>===</code></td></tr>
+<tr><th>33</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>42
+:
+8</td>
+<td><code>.       ===</code></td>
+<td><code></code></td></tr>
+<tr><th>34</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>42
+:
+8</td>
+<td><code>.       ===</code></td>
+<td><code></code></td></tr>
+<tr><th>35</th>
+<td>BinaryExpression</td>
+<td>RuntimeError</td>
+<td>42
+:
+27</td>
+<td><code>===</code></td>
+<td><code>!==</code></td></tr>
+<tr><th>36</th>
+<td>Block</td>
+<td>Killed</td>
+<td>42
+:
+34</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>37</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>46
+:
+8</td>
+<td><code>.       ===</code></td>
+<td><code></code></td></tr>
+<tr><th>38</th>
+<td>IfStatement</td>
+<td>Killed</td>
+<td>46
+:
+8</td>
+<td><code>.       ===</code></td>
+<td><code></code></td></tr>
+<tr><th>39</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>46
+:
+27</td>
+<td><code>===</code></td>
+<td><code>!==</code></td></tr>
+<tr><th>40</th>
+<td>Block</td>
+<td>Killed</td>
+<td>46
+:
+34</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>41</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>47
+:
+6</td>
+<td><code>(    ...    =</code></td>
+<td><code></code></td></tr>
+<tr><th>42</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>47
+:
+6</td>
+<td><code>(    ...    =</code></td>
+<td><code></code></td></tr>
+<tr><th>43</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>51
+:
+4</td>
+<td><code>(    ...    =</code></td>
+<td><code></code></td></tr>
+<tr><th>44</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>51
+:
+4</td>
+<td><code>(    ...    =</code></td>
+<td><code></code></td></tr>
+<tr><th>45</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>52
+:
+4</td>
+<td><code>(    ...    =</code></td>
+<td><code></code></td></tr>
+<tr><th>46</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>52
+:
+4</td>
+<td><code>(    ...    =</code></td>
+<td><code></code></td></tr>
+<tr><th>47</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>54
+:
+4</td>
+<td><code>=</code></td>
+<td><code></code></td></tr>
+<tr><th>48</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>54
+:
+4</td>
+<td><code>=</code></td>
+<td><code></code></td></tr>
+<tr><th>49</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>55
+:
+4</td>
+<td><code>=</code></td>
+<td><code></code></td></tr>
+<tr><th>50</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>55
+:
+4</td>
+<td><code>=</code></td>
+<td><code></code></td></tr></tbody></table></div></div></div></div>
+<footer>Generated with stryker-html-reporter generator. Visit the 
+<a href="https://stryker-mutator.io" target="_blank">Stryker website</a></footer></div>
+<script src="../strykerResources/popper.js/dist/umd/popper.min.js" defer="defer"></script>
+<script src="../strykerResources/jquery/dist/jquery.slim.min.js" defer="defer"></script>
+<script src="../strykerResources/bootstrap/js/bootstrap.min.js" defer="defer"></script>
+<script src="../strykerResources/stryker.js" defer="defer"></script></body></html>

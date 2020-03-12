@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html><head><title>delete/delete.ts
+ - Stryker report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../strykerResources/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../strykerResources/highlightjs/styles/default.css">
+<link rel="stylesheet" href="../strykerResources/stryker/stryker.css"></head>
+<body><img class="stryker-image" alt="Stryker" src="../strykerResources/stryker/stryker-80x80.png">
+<div class="container-fluid"><div class="row"><div class="col-lg-12"><h1 class="display-4">delete/delete.ts
+ 
+<small class="text-muted">- Stryker report</small></h1></div></div>
+<ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">All files</a></li>
+<li class="breadcrumb-item active">delete/delete.ts</li></ol>
+<div class="row"><div class="col-lg-12"><div class="row"><div class="col-sm-11"><table class="table table-sm table-hover table-bordered table-no-top"><thead><tr><th style="width: 20%"><div><span>File / Directory</span></div></th>
+<th colspan="2"><div><span>Mutation score</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Killed</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Survived</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Timeout</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># No coverage</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Runtime errors</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Transpile errors</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total detected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total undetected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total mutants</span></div></th></tr></thead>
+<tbody><tr><td>delete/delete.ts</td>
+<td><div class="progress"><div class="progress-bar bg-success" role="progressbar" aria-valuenow="80.00" aria-valuemin="0" aria-valuemax="100" style="width: 80.00%;">80.00
+%</div></div></td>
+<th class="text-center text-success" style="width: 10%">80.00</th>
+<td class="text-center">8</td>
+<td class="text-center">2</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<td class="text-center">9</td>
+<td class="text-center">0</td>
+<th class="text-center">8</th>
+<th class="text-center">2</th>
+<th class="text-center">19</th></tr>
+</tbody></table></div></div>
+<div class="row"><div class="col-lg-7"><div class="row legend"><form class="col-md-12" novalidate="novalidate">
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" checked value="2" type="checkbox">
+Survived
+ 
+(2)</label></div>
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" value="1" type="checkbox">
+Killed
+ 
+(8)</label></div>
+
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" value="4" type="checkbox">
+RuntimeError
+ 
+(9)</label></div>
+
+<a href="#" class="stryker-collapse-expand-all">Expand all</a></form></div>
+<pre><code class="lang-javascript"><span class="bg-null">import { LNode } from &quot;../lib&quot;;
+
+export function del(head: LNode, num: number): LNode </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="0"><span class="badge badge-secondary">0</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="0">{}</span><span class="stryker-original-code" data-mutant="0"><span class="bg-null">{
+  if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="1"><span class="badge badge-secondary">1</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="1">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="2"><span class="badge badge-danger">2</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="2">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="PrefixUnaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="3"><span class="badge badge-success">3</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="3">head.next</span><span class="stryker-original-code" data-mutant="1"><span class="stryker-original-code" data-mutant="2"><span class="stryker-original-code" data-mutant="3"><span class="bg-danger-light">!head.next</span></span></span></span><span class="bg-null">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="4"><span class="badge badge-danger">4</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="4">{}</span><span class="stryker-original-code" data-mutant="4"><span class="bg-danger-light">{
+    return head;
+  }</span></span><span class="bg-null">
+
+  let cur: LNode | null = head;
+
+  for (let i = 0; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ForStatement" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="5"><span class="badge badge-secondary">5</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="5">false</span><span class="stryker-original-code" data-mutant="5"><span class="bg-null">i </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="6"><span class="badge badge-success">6</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="6">&lt;=</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="7"><span class="badge badge-success">7</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="7">&gt;=</span><span class="stryker-original-code" data-mutant="6"><span class="stryker-original-code" data-mutant="7"><span class="bg-success-light">&lt;</span></span></span><span class="bg-null"> num</span></span><span class="bg-null">; i += 1) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="8"><span class="badge badge-success">8</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="8">{}</span><span class="stryker-original-code" data-mutant="8"><span class="bg-success-light">{
+    const pre = cur;
+    </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="9"><span class="badge badge-success">9</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="9">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="10"><span class="badge badge-success">10</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="10">true</span><span class="stryker-original-code" data-mutant="9"><span class="stryker-original-code" data-mutant="10"><span class="bg-success-light">cur = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="11"><span class="badge badge-secondary">11</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="11">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="12"><span class="badge badge-secondary">12</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="12">true</span><span class="stryker-original-code" data-mutant="11"><span class="stryker-original-code" data-mutant="12"><span class="bg-success-light">cur?.next ?? null</span></span></span></span></span><span class="bg-success-light">;
+
+    if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="13"><span class="badge badge-secondary">13</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="13">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="IfStatement" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="14"><span class="badge badge-secondary">14</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="14">false</span><span class="stryker-original-code" data-mutant="13"><span class="stryker-original-code" data-mutant="14"><span class="bg-success-light">cur </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryExpression" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="15"><span class="badge badge-secondary">15</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="15">!==</span><span class="stryker-original-code" data-mutant="15"><span class="bg-success-light">===</span></span><span class="bg-success-light"> null</span></span></span><span class="bg-success-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="Block" data-content="status: RuntimeError" data-mutant-status-annotation="secondary" data-mutant-status="4" data-mutant="16"><span class="badge badge-secondary">16</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="16">{}</span><span class="stryker-original-code" data-mutant="16"><span class="bg-success-light">{
+      break;
+    }</span></span><span class="bg-success-light">
+
+    </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="17"><span class="badge badge-success">17</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="17">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="ConditionalExpression" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="18"><span class="badge badge-success">18</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="18">true</span><span class="stryker-original-code" data-mutant="17"><span class="stryker-original-code" data-mutant="18"><span class="bg-success-light">pre.next = cur.next</span></span></span><span class="bg-success-light">;
+  }</span></span><span class="bg-null">
+
+  return head;
+}</span></span><span class="bg-null">
+</code></pre></div>
+<div class="col-lg-5"><table class="table table-sm table-hover mutant-table"><thead><tr><th>#</th>
+<th>Mutator</th>
+<th>State</th>
+<th>Location</th>
+<th>Original</th>
+<th>Replacement</th></tr></thead>
+<tbody><tr><th>0</th>
+<td>Block</td>
+<td>RuntimeError</td>
+<td>2
+:
+53</td>
+<td><code>{
+   ...  ;
+}</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>1</th>
+<td>IfStatement</td>
+<td>RuntimeError</td>
+<td>3
+:
+6</td>
+<td><code>!    .</code></td>
+<td><code></code></td></tr>
+<tr><th>2</th>
+<td>IfStatement</td>
+<td>Survived</td>
+<td>3
+:
+6</td>
+<td><code>!    .</code></td>
+<td><code></code></td></tr>
+<tr><th>3</th>
+<td>PrefixUnaryExpression</td>
+<td>Killed</td>
+<td>3
+:
+6</td>
+<td><code>!    .</code></td>
+<td><code>.</code></td></tr>
+<tr><th>4</th>
+<td>Block</td>
+<td>Survived</td>
+<td>3
+:
+18</td>
+<td><code>{
+   ...;
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>5</th>
+<td>ForStatement</td>
+<td>RuntimeError</td>
+<td>9
+:
+18</td>
+<td><code><</code></td>
+<td><code></code></td></tr>
+<tr><th>6</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>9
+:
+20</td>
+<td><code><</code></td>
+<td><code><=</code></td></tr>
+<tr><th>7</th>
+<td>BinaryExpression</td>
+<td>Killed</td>
+<td>9
+:
+20</td>
+<td><code><</code></td>
+<td><code>>=</code></td></tr>
+<tr><th>8</th>
+<td>Block</td>
+<td>Killed</td>
+<td>9
+:
+35</td>
+<td><code>{
+   ...;
+  }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>9</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>11
+:
+4</td>
+<td><code>=    ?.     ??</code></td>
+<td><code></code></td></tr>
+<tr><th>10</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>11
+:
+4</td>
+<td><code>=    ?.     ??</code></td>
+<td><code></code></td></tr>
+<tr><th>11</th>
+<td>ConditionalExpression</td>
+<td>RuntimeError</td>
+<td>11
+:
+10</td>
+<td><code>?.     ??</code></td>
+<td><code></code></td></tr>
+<tr><th>12</th>
+<td>ConditionalExpression</td>
+<td>RuntimeError</td>
+<td>11
+:
+10</td>
+<td><code>?.     ??</code></td>
+<td><code></code></td></tr>
+<tr><th>13</th>
+<td>IfStatement</td>
+<td>RuntimeError</td>
+<td>13
+:
+8</td>
+<td><code>===</code></td>
+<td><code></code></td></tr>
+<tr><th>14</th>
+<td>IfStatement</td>
+<td>RuntimeError</td>
+<td>13
+:
+8</td>
+<td><code>===</code></td>
+<td><code></code></td></tr>
+<tr><th>15</th>
+<td>BinaryExpression</td>
+<td>RuntimeError</td>
+<td>13
+:
+12</td>
+<td><code>===</code></td>
+<td><code>!==</code></td></tr>
+<tr><th>16</th>
+<td>Block</td>
+<td>RuntimeError</td>
+<td>13
+:
+22</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{}</code></td></tr>
+<tr><th>17</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>17
+:
+4</td>
+<td><code>.     =    .</code></td>
+<td><code></code></td></tr>
+<tr><th>18</th>
+<td>ConditionalExpression</td>
+<td>Killed</td>
+<td>17
+:
+4</td>
+<td><code>.     =    .</code></td>
+<td><code></code></td></tr></tbody></table></div></div></div></div>
+<footer>Generated with stryker-html-reporter generator. Visit the 
+<a href="https://stryker-mutator.io" target="_blank">Stryker website</a></footer></div>
+<script src="../strykerResources/popper.js/dist/umd/popper.min.js" defer="defer"></script>
+<script src="../strykerResources/jquery/dist/jquery.slim.min.js" defer="defer"></script>
+<script src="../strykerResources/bootstrap/js/bootstrap.min.js" defer="defer"></script>
+<script src="../strykerResources/stryker.js" defer="defer"></script></body></html>
