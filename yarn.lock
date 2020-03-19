@@ -435,7 +435,7 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@^25.1.2":
+"@types/jest@25.1.2":
   version "25.1.2"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-25.1.2.tgz#1c4c8770c27906c7d8def5d2033df9dbd39f60da"
   integrity sha512-EsPIgEsonlXmYV7GzUqcvORsSS9Gqxw/OvkGwHfAdpjduNRxMlhsav0O5Kb0zijc/eXSO/uW6SJt9nwull8AUQ==
@@ -475,7 +475,7 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@typescript-eslint/eslint-plugin@^2.19.2":
+"@typescript-eslint/eslint-plugin@2.19.2":
   version "2.19.2"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-2.19.2.tgz#e279aaae5d5c1f2547b4cff99204e1250bc7a058"
   integrity sha512-HX2qOq2GOV04HNrmKnTpSIpHjfl7iwdXe3u/Nvt+/cpmdvzYvY0NHSiTkYN257jHnq4OM/yo+OsFgati+7LqJA==
@@ -495,7 +495,7 @@
     "@typescript-eslint/typescript-estree" "2.19.2"
     eslint-scope "^5.0.0"
 
-"@typescript-eslint/parser@^2.19.2":
+"@typescript-eslint/parser@2.19.2":
   version "2.19.2"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-2.19.2.tgz#21f42c0694846367e7d6a907feb08ab2f89c0879"
   integrity sha512-8uwnYGKqX9wWHGPGdLB9sk9+12sjcdqEEYKGgbS8A0IvYX59h01o8os5qXUHMq2na8vpDRaV0suTLM7S8wraTA==
@@ -760,7 +760,7 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-audit-ci@^2.4.2:
+audit-ci@2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/audit-ci/-/audit-ci-2.4.2.tgz#0ae7fad0de35a2ea17380ce412cadbc9bc228832"
   integrity sha512-71vyaLMYWVJsuh19iCY2EqT7hslqj3VYPTa30YO0TtNdxZ2uN1bInw9s+73CdrqgFw0OKvFsobOgmNM77ZLYYQ==
@@ -1126,7 +1126,7 @@ commander@~2.19.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
   integrity sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==
 
-commitizen@^4.0.3:
+commitizen@4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-4.0.3.tgz#c19a4213257d0525b85139e2f36db7cc3b4f6dae"
   integrity sha512-lxu0F/Iq4dudoFeIl5pY3h3CQJzkmQuh3ygnaOvqhAD8Wu2pYBI17ofqSuPHNsBTEOh1r1AVa9kR4Hp0FAHKcQ==
@@ -1444,7 +1444,7 @@ email-addresses@^3.0.1:
   resolved "https://registry.npm.taobao.org/email-addresses/download/email-addresses-3.1.0.tgz#cabf7e085cbdb63008a70319a74e6136188812fb"
   integrity sha1-yr9+CFy9tjAIpwMZp05hNhiIEvs=
 
-emoji-cz@^0.3.0:
+emoji-cz@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/emoji-cz/-/emoji-cz-0.3.0.tgz#d337cb4928580277e510d91633f3755de34ae7c1"
   integrity sha1-0zfLSShYAnflENkWM/N1XeNK58E=
@@ -1546,7 +1546,7 @@ eslint-config-airbnb-base@^14.0.0:
     object.assign "^4.1.0"
     object.entries "^1.1.0"
 
-eslint-config-airbnb@^18.0.1:
+eslint-config-airbnb@18.0.1:
   version "18.0.1"
   resolved "https://registry.yarnpkg.com/eslint-config-airbnb/-/eslint-config-airbnb-18.0.1.tgz#a3a74cc29b46413b6096965025381df8fb908559"
   integrity sha512-hLb/ccvW4grVhvd6CT83bECacc+s4Z3/AEyWQdIT2KeTsG9dR7nx1gs7Iw4tDmGKozCNHFn4yZmRm3Tgy+XxyQ==
@@ -1555,7 +1555,7 @@ eslint-config-airbnb@^18.0.1:
     object.assign "^4.1.0"
     object.entries "^1.1.0"
 
-eslint-config-prettier@^6.10.0:
+eslint-config-prettier@6.10.0:
   version "6.10.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.10.0.tgz#7b15e303bf9c956875c948f6b21500e48ded6a7f"
   integrity sha512-AtndijGte1rPILInUdHjvKEGbIV06NuvPrqlIEaEaWtbtvJh464mDeyGMdZEQMsGvC0ZVkiex1fSNcC4HAbRGg==
@@ -1578,7 +1578,7 @@ eslint-module-utils@^2.4.1:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-import@^2.20.1:
+eslint-plugin-import@2.20.1:
   version "2.20.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.20.1.tgz#802423196dcb11d9ce8435a5fc02a6d3b46939b3"
   integrity sha512-qQHgFOTjguR+LnYRoToeZWT62XM55MBVXObHM6SKFd1VzDcX/vqT1kAz8ssqigh5eMj8qXcRoXXGZpPP6RfdCw==
@@ -1596,7 +1596,7 @@ eslint-plugin-import@^2.20.1:
     read-pkg-up "^2.0.0"
     resolve "^1.12.0"
 
-eslint-plugin-jsx-a11y@^6.2.3:
+eslint-plugin-jsx-a11y@6.2.3:
   version "6.2.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jsx-a11y/-/eslint-plugin-jsx-a11y-6.2.3.tgz#b872a09d5de51af70a97db1eea7dc933043708aa"
   integrity sha512-CawzfGt9w83tyuVekn0GDPU9ytYtxyxyFZ3aSWROmnRRFQFT2BiPJd7jvRdzNDi6oLWaS2asMeYSNMjWTV4eNg==
@@ -1611,19 +1611,19 @@ eslint-plugin-jsx-a11y@^6.2.3:
     has "^1.0.3"
     jsx-ast-utils "^2.2.1"
 
-eslint-plugin-prettier@^3.1.2:
+eslint-plugin-prettier@3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.2.tgz#432e5a667666ab84ce72f945c72f77d996a5c9ba"
   integrity sha512-GlolCC9y3XZfv3RQfwGew7NnuFDKsfI4lbvRK+PIIo23SFH+LemGs4cKwzAaRa+Mdb+lQO/STaIayno8T5sJJA==
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-react-hooks@^1.7.0:
+eslint-plugin-react-hooks@1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-1.7.0.tgz#6210b6d5a37205f0b92858f895a4e827020a7d04"
   integrity sha512-iXTCFcOmlWvw4+TOE8CLWj6yX1GwzT0Y6cUfHHZqWnSk144VmVIRcVGtUAzrLES7C798lmvnt02C7rxaOX1HNA==
 
-eslint-plugin-react@^7.18.3:
+eslint-plugin-react@7.18.3:
   version "7.18.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.18.3.tgz#8be671b7f6be095098e79d27ac32f9580f599bc8"
   integrity sha512-Bt56LNHAQCoou88s8ViKRjMB2+36XRejCQ1VoLj716KI1MoE99HpTVvIThJ0rvFmG4E4Gsq+UgToEjn+j044Bg==
@@ -1659,7 +1659,7 @@ eslint-visitor-keys@^1.1.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
 
-eslint@^6.8.0:
+eslint@6.8.0:
   version "6.8.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.8.0.tgz#62262d6729739f9275723824302fb227c8c93ffb"
   integrity sha512-K+Iayyo2LtyYhDSYwz5D5QdWw0hCacNzyq1Y821Xna2xSJj7cijoLLYmLxTQgcgZ9mC61nryMy9S7GRbYpI5Ig==
@@ -2172,10 +2172,10 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-gh-pages@^2.2.0:
+gh-pages@2.2.0:
   version "2.2.0"
-  resolved "https://registry.npm.taobao.org/gh-pages/download/gh-pages-2.2.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgh-pages%2Fdownload%2Fgh-pages-2.2.0.tgz#74ebeaca8d2b9a11279dcbd4a39ddfff3e6caa24"
-  integrity sha1-dOvqyo0rmhEnncvUo53f/z5sqiQ=
+  resolved "https://registry.yarnpkg.com/gh-pages/-/gh-pages-2.2.0.tgz#74ebeaca8d2b9a11279dcbd4a39ddfff3e6caa24"
+  integrity sha512-c+yPkNOPMFGNisYg9r4qvsMIjVYikJv7ImFOhPIVPt0+AcRUamZ7zkGRLHz7FKB0xrlZ+ddSOJsZv9XAFVXLmA==
   dependencies:
     async "^2.6.1"
     commander "^2.18.0"
@@ -2387,7 +2387,7 @@ humanize-url@^1.0.0:
     normalize-url "^1.0.0"
     strip-url-auth "^1.0.0"
 
-husky@^4.2.3:
+husky@4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/husky/-/husky-4.2.3.tgz#3b18d2ee5febe99e27f2983500202daffbc3151e"
   integrity sha512-VxTsSTRwYveKXN4SaH1/FefRJYCtx+wx04sSVcOpD7N2zjoHxa+cEJ07Qg5NmV3HAK+IRKOyNVpi2YBIVccIfQ==
@@ -3173,7 +3173,7 @@ jest-worker@^25.1.0:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jest@^25.1.0:
+jest@25.1.0:
   version "25.1.0"
   resolved "https://registry.yarnpkg.com/jest/-/jest-25.1.0.tgz#b85ef1ddba2fdb00d295deebbd13567106d35be9"
   integrity sha512-FV6jEruneBhokkt9MQk0WUFoNTwnF76CLXtwNMfsc0um0TlB/LG2yxUd0KqaFjEJ9laQmVWQWS0sG/t2GsuI0w==
@@ -4130,7 +4130,7 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^1.19.1:
+prettier@1.19.1:
   version "1.19.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
   integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
@@ -4957,14 +4957,14 @@ strip-url-auth@^1.0.0:
   resolved "https://registry.npm.taobao.org/strip-url-auth/download/strip-url-auth-1.0.1.tgz#22b0fa3a41385b33be3f331551bbb837fa0cd7ae"
   integrity sha1-IrD6OkE4WzO+PzMVUbu4N/oM164=
 
-stryker-api@^0.24.1:
+stryker-api@0.24.1, stryker-api@^0.24.1:
   version "0.24.1"
   resolved "https://registry.yarnpkg.com/stryker-api/-/stryker-api-0.24.1.tgz#4d970a60a3c00101683df172a2dc7b182cab97d1"
   integrity sha512-7ar/+f96KXokhy8sT8EotUjt0+7hyeMpDQTQklWwhOkT6EHWLGYA1VBnYsrkn/KfSzNF8i6lUArBIJnyyfkc7A==
   dependencies:
     tslib "~1.9.3"
 
-stryker-html-reporter@^0.18.1:
+stryker-html-reporter@0.18.1:
   version "0.18.1"
   resolved "https://registry.yarnpkg.com/stryker-html-reporter/-/stryker-html-reporter-0.18.1.tgz#5c4345492b3bb7549c7b4919f44d4541e7b7e807"
   integrity sha512-vfc2UTbiFpsgFyJh/Ag3ZgZR4aJ/vUbcGX7CE7ES8X6wAVzYL8QZ6B2JdqRH6Lz8bY9hw6RvTwyHCwxf254DFg==
@@ -4978,7 +4978,7 @@ stryker-html-reporter@^0.18.1:
     stryker-api "^0.24.1"
     typed-html "~1.0.0"
 
-stryker-jest-runner@^1.4.1:
+stryker-jest-runner@1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/stryker-jest-runner/-/stryker-jest-runner-1.4.1.tgz#023c8bc83c179623f4cad8c88d9015608ee94c2f"
   integrity sha512-LkFNqQ1ZDgjQ1TbYK6tcIhlxNU8a1JZc7T3gpkf+kbC/zwQMwYLTChuKWO69wpeQWXAdZjvV3ftpeiKYb3ZQog==
@@ -4986,7 +4986,7 @@ stryker-jest-runner@^1.4.1:
     semver "~5.6.0"
     stryker-api "^0.24.1"
 
-stryker-typescript@^0.18.1:
+stryker-typescript@0.18.1:
   version "0.18.1"
   resolved "https://registry.yarnpkg.com/stryker-typescript/-/stryker-typescript-0.18.1.tgz#2667c3af1080e15ec557c0dee404ff863e20f502"
   integrity sha512-NCVXzXIrfEA3vwVgyHBWs+IChWZt0Rzf9jtxBOgBnrbQ3KW/WnJww0zxHP2CXNMV8WQPDoWbBpnmdl1pOhJzkw==
@@ -4997,7 +4997,7 @@ stryker-typescript@^0.18.1:
     stryker-api "^0.24.1"
     tslib "~1.9.3"
 
-stryker@^0.35.1:
+stryker@0.35.1:
   version "0.35.1"
   resolved "https://registry.yarnpkg.com/stryker/-/stryker-0.35.1.tgz#d5536e1cf189999015ac2cb6d15439b197496029"
   integrity sha512-AJ2qcjPjke87LwHrzo+HfzuLJdhR2KCuNF5oT61+pL8SSGvXEOjU9nrvR+WbhBdtD+3A/3RC3bbYYbV2iQqXdg==
@@ -5198,7 +5198,7 @@ trim-repeated@^1.0.0:
   dependencies:
     escape-string-regexp "^1.0.2"
 
-ts-jest@^25.2.0:
+ts-jest@25.2.0:
   version "25.2.0"
   resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-25.2.0.tgz#dfd87c2b71ef4867f5a0a44f40cb9c67e02991ac"
   integrity sha512-VaRdb0da46eorLfuHEFf0G3d+jeREcV+Wb/SvW71S4y9Oe8SHWU+m1WY/3RaMknrBsnvmVH0/rRjT8dkgeffNQ==
