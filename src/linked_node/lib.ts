@@ -43,7 +43,7 @@ export function init(INIT_DATA: number[]): LNode {
   const head = new LNode(0);
   let curr = head;
 
-  INIT_DATA.forEach(index => {
+  INIT_DATA.forEach((index) => {
     curr.next = new LNode(index);
     curr = curr.next;
   });

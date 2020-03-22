@@ -27,7 +27,7 @@ export const add = (head1: LNode, head2: LNode): LNode => {
       cursor1 = cursor1.next;
       cursor2 = cursor2.next;
     } else if (c === 0) {
-      const [cursor] = [cursor1, cursor2].filter(cur => cur !== null);
+      const [cursor] = [cursor1, cursor2].filter((cur) => cur !== null);
       cursor3.next = cursor?.next ?? null;
       break;
     }

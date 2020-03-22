@@ -29,6 +29,6 @@ export function find(tree: BTree<number>) {
 
   return {
     sum: maxSum,
-    root: maxSumRoot.data
+    root: maxSumRoot.data,
   };
 }

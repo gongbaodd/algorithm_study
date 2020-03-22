@@ -16,7 +16,7 @@ function extend(
   direction: Exclude<keyof LNode, "data">
 ): LNode {
   let current = head;
-  datas.forEach(data => {
+  datas.forEach((data) => {
     current[direction] = new LNode(data);
     current = current[direction] as LNode;
   });

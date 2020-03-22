@@ -52,7 +52,7 @@ export class Stack<T> {
   static from<T>(arr: T[]) {
     const s = new Stack<T>();
 
-    arr.forEach(item => {
+    arr.forEach((item) => {
       s.push(item);
     });
 
