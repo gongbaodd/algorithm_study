@@ -17,7 +17,7 @@ describe("BTree", () => {
         7,
         8,
         9,
-        10
+        10,
       ]);
       expect(root).toMatchSnapshot();
     });

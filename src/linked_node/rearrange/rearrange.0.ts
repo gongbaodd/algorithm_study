@@ -37,7 +37,7 @@ export function rearrage(head: LNode): LNode {
     const tailNext: nextNode = tailCursor?.next ?? null;
 
     const leftCursors = [headCursor, tailCursor].filter(
-      cursor => cursor !== null
+      (cursor) => cursor !== null
     );
 
     if (leftCursors.length === 0) {
