@@ -6,7 +6,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "13.9.3",
+    "@types/node": "13.9.4",
     "ts-node": "8.6.2",
     "typescript": "3.7.5"
   },
