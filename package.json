@@ -6,7 +6,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "13.9.3",
+    "@types/node": "13.9.4",
     "ts-node": "8.6.2",
     "typescript": "3.7.5"
   },
@@ -27,8 +27,8 @@
     "eslint-plugin-react-hooks": "2.5.1",
     "gh-pages": "2.2.0",
     "husky": "4.2.3",
-    "jest": "25.1.0",
     "prettier": "2.0.2",
+    "jest": "25.2.3",
     "stryker": "0.35.1",
     "stryker-api": "0.24.1",
     "stryker-html-reporter": "0.18.1",
